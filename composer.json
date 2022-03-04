@@ -1,0 +1,8 @@
+{
+    "name": "eugene3993/rorots-plugin",
+    "type": "october-plugin",
+    "description": "Plugin for generation Robots.txt",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

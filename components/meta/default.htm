@@ -1,0 +1,6 @@
+{% set self = __SELF__ %}
+{% set settings = __SELF__.settings %}
+{% set robots = [viewBag.robot_index, viewBag.robot_follow] %}
+{%- if settings.enable_robots_meta and (viewBag.robot_index!='index' or viewBag.robot_follow!='follow') %}
+<meta name="robots" content="{{ robots|join(', ') }}" />
+{% endif %}

@@ -1,0 +1,10 @@
+plugin:
+    name: 'eugene3993.robots::lang.plugin.name'
+    description: 'eugene3993.robots::lang.plugin.description'
+    author: Eugene3993
+    icon: icon-gears
+    homepage: ''
+permissions:
+    eugene3993.robots:
+        tab: 'Robots.txt'
+        label: 'eugene3993.robots::lang.permissions'

@@ -1,0 +1,30 @@
+fields:
+    enable_robots_txt:
+        label: 'eugene3993.robots::lang.settings.enable_robots_txt'
+        span: auto
+        type: switch
+        default: false
+    enable_robots_meta:
+        label: 'eugene3993.robots::lang.settings.enable_robots_meta'
+        span: auto
+        type: switch
+        default: false
+    robots_txt:
+        label: robots.txt
+        size: giant
+        language: plain_text
+        span: full
+        trigger:
+            action: show
+            field: enable_robots_txt
+            condition: checked
+        type: codeeditor
+        default: "User-agent: *\r\nAllow: /\r\r\nSitemap: $domain/sitemap.xml"
+    link_block:
+        type: partial
+        path: $/eugene3993/robots/models/settings/_html.htm
+        span: auto
+        trigger:
+            action: show
+            field: enable_robots_txt
+            condition: checked
