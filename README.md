@@ -20,4 +20,4 @@ You need to connect the components and insert them in the right place in the cod
 
 If you have any question about how to use this plugin, please don't hesitate to contact us. We're happy to help you.
 - telegram: [@Eugene_Kul](https://t.me/eugene_kul)
-- email: [gm742445004@gmail.com](mailto:admin@cloudhadoop.com)
+- email: [gm742445004@gmail.com](mailto:gm742445004@gmail.com)
