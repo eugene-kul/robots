@@ -9,13 +9,13 @@ robot_index:
     span: left
     default: index
 
-robot_follow :
-    label   : robots follow
-    type    : balloon-selector
-    tab     : Robots
-    options :
+robot_follow:
+    label: robots follow
+    type: balloon-selector
+    tab: Robots
+    options:
         follow: follow
         nofollow: nofollow
-    comment : eugene3993.robots::lang.config.follow
-    span    : right
-    default : follow
+    comment: eugene3993.robots::lang.config.follow
+    span: right
+    default: follow

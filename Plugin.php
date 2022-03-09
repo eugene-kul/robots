@@ -36,10 +36,12 @@ class Plugin extends PluginBase {
                 if (!($theme = Theme::getEditTheme()))
                     throw new ApplicationException(Lang::get('cms::lang.theme.edit.not_found'));
 
-                if (PluginManager::instance()->hasPlugin('RainLab.Pages')
-                    && $widget->model instanceof \RainLab\Pages\Classes\Page) {
-
+                if (PluginManager::instance()->hasPlugin('RainLab.Pages') && $widget->model instanceof \RainLab\Pages\Classes\Page) {
                     $widget->addFields($this->staticSeoFields(), 'primary');
+                }
+
+                if (PluginManager::instance()->hasPlugin('RainLab.Blog') && $widget->model instanceof \RainLab\Blog\Models\Post) {
+                    $widget->addFields($this->blogSeoFields(), 'secondary');
                 }
 
                 if (!$widget->model instanceof \Cms\Classes\Page) return;
@@ -48,6 +50,12 @@ class Plugin extends PluginBase {
             }
 
         });
+    }
+
+    private function blogSeoFields() {
+        return collect($this->seoFields())->mapWithKeys(function($item, $key) {
+            return ["metadata[$key]" => $item];
+        })->toArray();
     }
 
     private function staticSeoFields() {

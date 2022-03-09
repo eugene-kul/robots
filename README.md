@@ -2,9 +2,7 @@
 
 The plugin generates a file Robots.txt and adds the robots meta tag management functionality for each page.
 
-> Robots meta tags are supported in **CMS Pages** and **Static Pages**.
-
-> If you find any errors or typos in the code or interface of the plugin, please let me know
+> Robots meta tags are supported in **CMS Pages**, **Static Pages** and **Blog Posts**.
 
 ---
 
@@ -16,8 +14,14 @@ You need to connect the components and insert them in the right place in the cod
 {% component 'metaRobots' %}
 ```
 
+**Important!**: Make sure that all the necessary parameters are enabled on the settings page.
+
+---
+
+> If you find any errors or typos in the code or interface of the plugin, please let me know
+
 ---
 
 If you have any question about how to use this plugin, please don't hesitate to contact us. We're happy to help you.
 - telegram: [@Eugene_Kul](https://t.me/eugene_kul)
-- email: [gm742445004@gmail.com](mailto:gm742445004@gmail.com)
+- email: [gm742445004@gmail.com](mailto:admin@cloudhadoop.com)
